@@ -9,10 +9,13 @@
 <p>注册成功后github会发送验证邮件到你的邮箱，请查收邮件并进行验证。</p>
 <h5 id="新建版本库"><a href="#新建版本库" class="headerlink" title="新建版本库"></a>新建版本库</h5><p>注册完成后，点击Start a project来新建一个版本库。</p>
 <p>如果你已经注册，则在自己的主页，点击”New repository”，输入Repository name:yourname.github.io(yourname与你的注册用户名一致,这个就是你博客的域名了)</p>
-<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5C%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA1.png"></p>
+
+
 <h5 id="启用GitHub-Page"><a href="#启用GitHub-Page" class="headerlink" title="启用GitHub Page"></a>启用GitHub Page</h5><p>进入版本库后，点击右上方的setting，下来到Githubs pages栏目</p>
-<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5C%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2.png"></p>
-<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Users\zeng\AppData\Roaming\Typora\typora-user-images\image-20211212135139894.png" alt="image-20211212135139894"></p>
+<img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA2.png" class>
+
+
+
 <p>这里看到博客的访问地址，指定博客源文件的分支，设置自己的个人域名</p>
 <h4 id="下载并安装Git"><a href="#下载并安装Git" class="headerlink" title="下载并安装Git"></a>下载并安装Git</h4><p>根据自己电脑操作系统的位数到git官网下载相应的版本：</p>
 <p><a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a></p>
