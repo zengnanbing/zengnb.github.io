@@ -26,14 +26,16 @@
 <h4 id="下载并安装node-js"><a href="#下载并安装node-js" class="headerlink" title="下载并安装node.js"></a>下载并安装node.js</h4><p>根据自己电脑操作系统的位数到git官网下载相应的版本：</p>
 <p><a href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
 <h5 id="测试是否安装成功"><a href="#测试是否安装成功" class="headerlink" title="测试是否安装成功"></a>测试是否安装成功</h5><p>命令提示符窗口，输入如下命令：</p>
-<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5Cblog4.png"></p>
+<img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog4.png" class>
+
 <h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>在合适的地方新建一个文件夹，用来存放自己的博客文件，比如我的博客文件都存放在<code>D:\study\blog</code>目录下。</p>
 <p>在该目录下右键点击<code>Git Bash Here</code>，打开git的控制台窗口，以后我们所有的操作都在git控制台进行，就不要用Windows自带的控制台了。</p>
 <p>定位到该目录下，输入<code>npm i hexo-cli -g</code>安装Hexo。会有几个报错，无视它就行。</p>
 <p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
 <p>然后就要初始化我们的网站，输入<code>hexo init</code>初始化文件夹，接着输入<code>npm install</code>安装必备的组件。</p>
 <p>这样本地的网站配置也弄好啦，输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>打开本地服务器，然后浏览器打开<a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a>，就可以看到我们的博客啦，效果如下：</p>
-<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5Cblog5.png"></p>
+<img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog5.png" class>
+
 <p>打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客相关的各种信息。</p>
 <p>修改最后一行的配置：</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/zengnanbing/zengnanbing.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
