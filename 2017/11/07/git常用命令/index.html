@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>tags |  Zeng</title>
+      <title>git常用命令 |  Zeng</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -54,12 +54,273 @@
       
     <main class="content on">
       <section class="outer">
+  <article
+  id="post-git常用命令"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  git常用命令
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2017/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="article-date">
+  <time datetime="2017-11-07T12:27:38.000Z" itemprop="datePublished">2017-11-07</time>
+</a> 
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E5%B7%A5%E5%85%B7-git/">工具/git</a>
+  </div>
   
-    <h1 class="page-type-title">Categories</h1>
-    <div class="categories-box">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%B7%A5%E5%85%B7-git/">工具/git</a><span class="category-list-count">2</span></li></ul>
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">506</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">2 min</span>
+        </span>
+    </span>
+</div>
+ 
     </div>
+      
+
+
+
   
+    <div class="article-entry" itemprop="articleBody">
+       
+  <ul>
+<li><p>git clone [url]//克隆一份代码到本地仓库</p>
+</li>
+<li><p>git pull //把远程库的代码更新到工作台</p>
+</li>
+<li><p>git status //查看当前分支有哪些修改</p>
+</li>
+<li><p>git diff //查看当前没有add的内容</p>
+</li>
+<li><p>git add . //把本地的修改加到stage中</p>
+</li>
+<li><p>git commit -m ‘comments here’ //把stage中的修改提交到本地库</p>
+</li>
+<li><p>git reset –head commit_id // 撤回提交</p>
+</li>
+<li><p>git push //把本地库的修改提交到远程库中</p>
+</li>
+<li><p>git push origin localbranch:remotebranch // 将本地代码提交到远程的<strong>指定</strong>分支</p>
+</li>
+<li><p>git log //查看当前分支上面的日志信息</p>
+</li>
+<li><p>git log -p [file] //文件的修改记录</p>
+</li>
+<li><p>git log –stat –grep=”…” //查找提交记录</p>
+</li>
+<li><p>git diff –cache //查看已经add但是没有commit的内容</p>
+</li>
+<li><p>git branch -r/-a //查看远程分支/全部分支</p>
+</li>
+<li><p>git checkout master/branch //切换到某个分支</p>
+</li>
+<li><p>git checkout -b test //新建test分支</p>
+</li>
+<li><p>git checkout -d test //删除test分支</p>
+</li>
+<li><p>git checkout -b localbranch remotebranch //<strong>基于远程分支</strong>创建本地分支</p>
+</li>
+<li><p>git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上</p>
+</li>
+<li><p>git branch –set-upstream-to=origin/Release_v1.6.4_20170831 // 将本地分支<strong>关联</strong>到远程分支上</p>
+</li>
+<li><p>git branch –set-upstream-to=origin/Release_v1.6.4_20170831 localBranchName//<code> **切换**本地分支**关联**的远程分支</code> </p>
+</li>
+<li><p>git branch -vv // 查看本地分支关联的远程分支之间的<strong>对应关系</strong></p>
+</li>
+<li><p>git merge dev  //<strong>合并</strong>指定分支到当前分支(将dev分支合并到当前分支)</p>
+</li>
+<li><p>git reset –hard HEAD //撤销本地修改</p>
+</li>
+<li><p>git tag //列出所有标签</p>
+</li>
+<li><p>git tag -a [tag name] “comment” //新建tag</p>
+</li>
+<li><p>git push –tags</p>
+</li>
+<li><p>git cherry-pick [commit id] //合入某条提交</p>
+</li>
+<li><p>git cherry-pick commitid1..commitid100 //合入这个区间的提交，注意不包括commitd1,即(commitid1..commitid100]</p>
+</li>
+<li><p>git format-patch -s [commit id] // 某次提交以后的所有patch</p>
+</li>
+<li><p>git am field_patches/* –ignore-whitespace //合入补丁</p>
+</li>
+<li><p>git reset HEAD readme.txt // 把<strong>暂存区</strong>的修改撤<strong>销掉</strong>（<code>unstage</code>），重新放回工作区</p>
+</li>
+<li><p>git checkout – readme.txt<code> 让这个文件回到最近一次</code>git commit<code>或</code>git add<code>时的状态,没有</code>–` ，就变成了切换分支的命令</p>
+</li>
+</ul>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2017/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
+  </div>
+
+   
+  <nav class="article-nav">
+    
+      <a href="/2021/12/11/hello-world/" class="article-nav-link">
+        <strong class="article-nav-caption">上一篇</strong>
+        <div class="article-nav-title">
+          
+            Hello World
+          
+        </div>
+      </a>
+    
+    
+      <a href="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">Github-Pages-Hexo搭建博客</div>
+      </a>
+    
+  </nav>
+
+   
+<!-- valine评论 -->
+<div id="vcomments-box">
+  <div id="vcomments"></div>
+</div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+    el: "#vcomments",
+    app_id: "",
+    app_key: "",
+    path: window.location.pathname,
+    avatar: "monsterid",
+    placeholder: "给我的文章加点评论吧~",
+    recordIP: true,
+  });
+  const infoEle = document.querySelector("#vcomments .info");
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
+  }
+</script>
+<style>
+  #vcomments-box {
+    padding: 5px 30px;
+  }
+
+  @media screen and (max-width: 800px) {
+    #vcomments-box {
+      padding: 5px 0px;
+    }
+  }
+
+  #vcomments-box #vcomments {
+    background-color: #fff;
+  }
+
+  .v .vlist .vcard .vh {
+    padding-right: 20px;
+  }
+
+  .v .vlist .vcard {
+    padding-left: 10px;
+  }
+</style>
+
+ 
+   
+     
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -196,6 +457,22 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link

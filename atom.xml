@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-12-11T08:23:13.501Z</updated>
+  <updated>2021-12-12T13:13:10.103Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git理解</title>
+    <link href="http://example.com/2021/12/12/git%E7%90%86%E8%A7%A3/"/>
+    <id>http://example.com/2021/12/12/git%E7%90%86%E8%A7%A3/</id>
+    <published>2021-12-12T12:40:54.000Z</published>
+    <updated>2021-12-12T13:13:10.103Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="工具/git" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7-git/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>认识与入门MarkDown</title>
+    <link href="http://example.com/2021/12/12/%E8%AE%A4%E8%AF%86%E4%B8%8E%E5%85%A5%E9%97%A8MarkDown/"/>
+    <id>http://example.com/2021/12/12/%E8%AE%A4%E8%AF%86%E4%B8%8E%E5%85%A5%E9%97%A8MarkDown/</id>
+    <published>2021-12-12T12:14:09.000Z</published>
+    <updated>2021-12-12T12:22:46.579Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;!doctype html&gt;
+&lt;p&gt;&lt;a href=&quot;http://zh.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt;</summary>
+        
+      
+    
+    
+    
+    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -33,6 +80,34 @@
       
     
     
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git常用命令</title>
+    <link href="http://example.com/2017/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://example.com/2017/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
+    <published>2017-11-07T12:27:38.000Z</published>
+    <updated>2021-12-12T13:20:51.773Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;git clone [url]//克隆一份代码到本地仓库&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;git pull //把远程库的代码更新到工作台&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;git status</summary>
+        
+      
+    
+    
+    
+    <category term="工具/git" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7-git/"/>
     
     
   </entry>
