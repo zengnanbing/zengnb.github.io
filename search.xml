@@ -94,82 +94,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>git常用命令</title>
-    <url>/2017/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-    <content><![CDATA[<ul>
-<li><p>git clone [url]//克隆一份代码到本地仓库</p>
-</li>
-<li><p>git pull //把远程库的代码更新到工作台</p>
-</li>
-<li><p>git status //查看当前分支有哪些修改</p>
-</li>
-<li><p>git diff //查看当前没有add的内容</p>
-</li>
-<li><p>git add . //把本地的修改加到stage中</p>
-</li>
-<li><p>git commit -m ‘comments here’ //把stage中的修改提交到本地库</p>
-</li>
-<li><p>git reset –head commit_id // 撤回提交</p>
-</li>
-<li><p>git push //把本地库的修改提交到远程库中</p>
-</li>
-<li><p>git push origin localbranch:remotebranch // 将本地代码提交到远程的<strong>指定</strong>分支</p>
-</li>
-<li><p>git log //查看当前分支上面的日志信息</p>
-</li>
-<li><p>git log -p [file] //文件的修改记录</p>
-</li>
-<li><p>git log –stat –grep=”…” //查找提交记录</p>
-</li>
-<li><p>git diff –cache //查看已经add但是没有commit的内容</p>
-</li>
-<li><p>git branch -r/-a //查看远程分支/全部分支</p>
-</li>
-<li><p>git checkout master/branch //切换到某个分支</p>
-</li>
-<li><p>git checkout -b test //新建test分支</p>
-</li>
-<li><p>git checkout -d test //删除test分支</p>
-</li>
-<li><p>git checkout -b localbranch remotebranch //<strong>基于远程分支</strong>创建本地分支</p>
-</li>
-<li><p>git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上</p>
-</li>
-<li><p>git branch –set-upstream-to=origin/Release_v1.6.4_20170831 // 将本地分支<strong>关联</strong>到远程分支上</p>
-</li>
-<li><p>git branch –set-upstream-to=origin/Release_v1.6.4_20170831 localBranchName//<code> **切换**本地分支**关联**的远程分支</code> </p>
-</li>
-<li><p>git branch -vv // 查看本地分支关联的远程分支之间的<strong>对应关系</strong></p>
-</li>
-<li><p>git merge dev  //<strong>合并</strong>指定分支到当前分支(将dev分支合并到当前分支)</p>
-</li>
-<li><p>git reset –hard HEAD //撤销本地修改</p>
-</li>
-<li><p>git tag //列出所有标签</p>
-</li>
-<li><p>git tag -a [tag name] “comment” //新建tag</p>
-</li>
-<li><p>git push –tags</p>
-</li>
-<li><p>git cherry-pick [commit id] //合入某条提交</p>
-</li>
-<li><p>git cherry-pick commitid1..commitid100 //合入这个区间的提交，注意不包括commitd1,即(commitid1..commitid100]</p>
-</li>
-<li><p>git format-patch -s [commit id] // 某次提交以后的所有patch</p>
-</li>
-<li><p>git am field_patches/* –ignore-whitespace //合入补丁</p>
-</li>
-<li><p>git reset HEAD readme.txt // 把<strong>暂存区</strong>的修改撤<strong>销掉</strong>（<code>unstage</code>），重新放回工作区</p>
-</li>
-<li><p>git checkout – readme.txt<code> 让这个文件回到最近一次</code>git commit<code>或</code>git add<code>时的状态,没有</code>–` ，就变成了切换分支的命令</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工具/git</category>
-      </categories>
-  </entry>
-  <entry>
     <title>git理解</title>
     <url>/2021/12/12/git%E7%90%86%E8%A7%A3/</url>
     <content><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>  <code>git</code>有四个工作区域，分别是：工作目录（<code>Workspace</code>）、暂存区（<code>Index/Stage</code>）、本地仓库（<code>Repository</code>）、远程仓库（<code>Remote</code>）</p>
@@ -401,6 +325,83 @@
 ]]></content>
       <categories>
         <category>工具</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>git常用命令</title>
+    <url>/2017/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+    <content><![CDATA[<ul>
+<li><p>git clone [url]//克隆一份代码到本地仓库</p>
+</li>
+<li><p>git pull //把远程库的代码更新到工作台</p>
+</li>
+<li><p>git status //查看当前分支有哪些修改</p>
+</li>
+<li><p>git diff //查看当前没有add的内容</p>
+</li>
+<li><p>git add . //把本地的修改加到stage中</p>
+</li>
+<li><p>git commit -m ‘comments here’ //把stage中的修改提交到本地库</p>
+</li>
+<li><p>git reset –head commit_id // 撤回提交</p>
+</li>
+<li><p>git push //把本地库的修改提交到远程库中</p>
+</li>
+<li><p>git push origin localbranch:remotebranch // 将本地代码提交到远程的<strong>指定</strong>分支</p>
+</li>
+<li><p>git log //查看当前分支上面的日志信息</p>
+</li>
+<li><p>git log -p [file] //文件的修改记录</p>
+</li>
+<li><p>git log –stat –grep=”…” //查找提交记录</p>
+</li>
+<li><p>git diff –cache //查看已经add但是没有commit的内容</p>
+</li>
+<li><p>git branch -r/-a //查看远程分支/全部分支</p>
+</li>
+<li><p>git checkout master/branch //切换到某个分支</p>
+</li>
+<li><p>git checkout -b test //新建test分支</p>
+</li>
+<li><p>git checkout -d test //删除test分支</p>
+</li>
+<li><p>git checkout -b localbranch remotebranch //<strong>基于远程分支</strong>创建本地分支</p>
+</li>
+<li><p>git merge master //假设当前在test分支上面，把master分支上的修改同步到test分支上</p>
+</li>
+<li><p>git branch –set-upstream-to=origin/Release_v1.6.4_20170831 // 将本地分支<strong>关联</strong>到远程分支上</p>
+</li>
+<li><p>git branch –set-upstream-to=origin/Release_v1.6.4_20170831 localBranchName//<code> **切换**本地分支**关联**的远程分支</code> </p>
+</li>
+<li><p>git branch -vv // 查看本地分支关联的远程分支之间的<strong>对应关系</strong></p>
+</li>
+<li><p>git merge dev  //<strong>合并</strong>指定分支到当前分支(将dev分支合并到当前分支)</p>
+</li>
+<li><p>git reset –hard HEAD //撤销本地修改</p>
+</li>
+<li><p>git tag //列出所有标签</p>
+</li>
+<li><p>git tag -a [tag name] “comment” //新建tag</p>
+</li>
+<li><p>git push –tags</p>
+</li>
+<li><p>git cherry-pick [commit id] //合入某条提交</p>
+</li>
+<li><p>git cherry-pick commitid1..commitid100 //合入这个区间的提交，注意不包括commitd1,即(commitid1..commitid100]</p>
+</li>
+<li><p>git format-patch -s [commit id] // 某次提交以后的所有patch</p>
+</li>
+<li><p>git am field_patches/* –ignore-whitespace //合入补丁</p>
+</li>
+<li><p>git reset HEAD readme.txt // 把<strong>暂存区</strong>的修改撤<strong>销掉</strong>（<code>unstage</code>），重新放回工作区</p>
+</li>
+<li><p>git checkout – readme.txt<code> 让这个文件回到最近一次</code>git commit<code>或</code>git add<code>时的状态,没有</code>–` ，就变成了切换分支的命令</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工具</category>
+        <category>git</category>
       </categories>
   </entry>
 </search>

@@ -89,7 +89,7 @@
     <link href="http://example.com/2017/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://example.com/2017/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</id>
     <published>2017-11-07T12:27:38.000Z</published>
-    <updated>2021-12-12T13:20:51.773Z</updated>
+    <updated>2021-12-12T13:26:34.750Z</updated>
     
     
       
@@ -107,7 +107,9 @@
     
     
     
-    <category term="工具/git" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7-git/"/>
+    <category term="工具" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    <category term="git" scheme="http://example.com/categories/%E5%B7%A5%E5%85%B7/git/"/>
     
     
   </entry>
