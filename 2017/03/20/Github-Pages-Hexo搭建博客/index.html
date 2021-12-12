@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Github-Pages-Hexo搭建博客 |  Hexo</title>
+      <title>Github-Pages-Hexo搭建博客 |  Zeng</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -42,7 +42,7 @@
           font-size: 1.6rem;
         }
       </style>
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Zeng" type="application/atom+xml">
 </head>
   </html>
 </html>
@@ -82,7 +82,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">931</span>
+            <span class="post-count">2.3k</span>
         </span>
     </span>
 
@@ -91,7 +91,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">3 min</span>
+            <span class="post-count">8 min</span>
         </span>
     </span>
 </div>
@@ -117,7 +117,7 @@
 <h5 id="启用GitHub-Page"><a href="#启用GitHub-Page" class="headerlink" title="启用GitHub Page"></a>启用GitHub Page</h5><p>进入版本库后，点击右上方的setting，下来到Githubs pages栏目</p>
 <img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog2.png" class>
 
-<img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA3.png" class title="image-20211212135139894">
+<img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/blog3.png" class title="image-20211212135139894">
 
 
 
@@ -129,14 +129,14 @@
 <h4 id="下载并安装node-js"><a href="#下载并安装node-js" class="headerlink" title="下载并安装node.js"></a>下载并安装node.js</h4><p>根据自己电脑操作系统的位数到git官网下载相应的版本：</p>
 <p><a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">https://nodejs.org/en/download/</a></p>
 <h5 id="测试是否安装成功"><a href="#测试是否安装成功" class="headerlink" title="测试是否安装成功"></a>测试是否安装成功</h5><p>命令提示符窗口，输入如下命令：</p>
-<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5C%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA4.png"></p>
+<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5Cblog4.png"></p>
 <h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>在合适的地方新建一个文件夹，用来存放自己的博客文件，比如我的博客文件都存放在<code>D:\study\blog</code>目录下。</p>
 <p>在该目录下右键点击<code>Git Bash Here</code>，打开git的控制台窗口，以后我们所有的操作都在git控制台进行，就不要用Windows自带的控制台了。</p>
 <p>定位到该目录下，输入<code>npm i hexo-cli -g</code>安装Hexo。会有几个报错，无视它就行。</p>
 <p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
 <p>然后就要初始化我们的网站，输入<code>hexo init</code>初始化文件夹，接着输入<code>npm install</code>安装必备的组件。</p>
 <p>这样本地的网站配置也弄好啦，输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>打开本地服务器，然后浏览器打开<a href="https://link.zhihu.com/?target=http://localhost:4000/">http://localhost:4000/</a>，就可以看到我们的博客啦，效果如下：</p>
-<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5C%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA5.png"></p>
+<p><img src="/2017/03/20/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/Github-Pages-Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%5Cblog5.png"></p>
 <p>打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客相关的各种信息。</p>
 <p>修改最后一行的配置：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/zengnanbing/zengnanbing.github.io</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
@@ -151,6 +151,47 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploy done: git</span><br></pre></td></tr></table></figure>
 
 <p>然后你再去访问你创建的Github pages地址，也就是：你的Github用名.github.io，即可看到你本地的hexo项目已经被部署到github上去了。此时博客的默认主题是landscape，即上面本地测试时的样子。</p>
+<h3 id="第二部分"><a href="#第二部分" class="headerlink" title="第二部分"></a>第二部分</h3><p>主要讲解Hexo的站点配置、主题配置和使用以及博客文章的发布。</p>
+<p>在Hexo中有两份主要的配置文件，其名称都是_config.yml。其中，一份位于站点根目录下，主要包含Hexo本身的配置,我们称之为<strong>全局配置文件</strong>；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项,我们称之为<strong>主题配置文件</strong>。</p>
+<p>hexo的官方网站：<a target="_blank" rel="noopener" href="https://hexo.io/%EF%BC%8C%E9%87%8C%E9%9D%A2%E6%9C%89hexo%E7%9A%84%E8%AF%A6%E7%BB%86%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3%EF%BC%8C%E4%B8%8D%E8%BF%87%E6%98%AF%E8%8B%B1%E6%96%87%E7%9A%84%E3%80%82%E6%B2%A1%E5%85%B3%E7%B3%BB%EF%BC%8C%E8%8B%B1%E8%AF%AD%E4%B8%8D%E5%A5%BD%E7%9A%84%E8%AF%B7%E5%BE%80%E4%B8%8B%E7%9C%8B%E3%80%82">https://hexo.io/，里面有hexo的详细说明文档，不过是英文的。没关系，英语不好的请往下看。</a></p>
+<p><strong>注意：配置文件中每个字段后面的冒号是英文格式的，且在其后要加一个空格再写值</strong></p>
+<p>比如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title: Myblog</span><br></pre></td></tr></table></figure>
+
+<h4 id="hexo的站点配置"><a href="#hexo的站点配置" class="headerlink" title="hexo的站点配置"></a>hexo的站点配置</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"># Hexo Configuration</span><br><span class="line">## Docs: https://hexo.io/docs/configuration.html</span><br><span class="line">## Source: https://github.com/hexojs/hexo/</span><br><span class="line"></span><br><span class="line"># Site 站点信息配置，根据自己的需要进行修改</span><br><span class="line">title: Zeng&#x27;s Blog    #站点名，会在浏览器页面标签左上角显示</span><br><span class="line">subtitle: Love Coding,Enjoy Life  #副标题</span><br><span class="line">description: zeng  #对站点的描述，给搜索引擎看的，可以自定义</span><br><span class="line">author: zeng  #网站作者</span><br><span class="line">language: zh-Hans  #网站语言</span><br><span class="line">timezone: Asia/Shanghai  #时区</span><br><span class="line">avatar: /images/logo.jpg  #网站logo，会在浏览器页面标签左上角显示</span><br><span class="line"></span><br><span class="line"># URL 博客地址,与申请的GitHub一致</span><br><span class="line">## If your site is put in a subdirectory, set url as &#x27;http://yoursite.com/child&#x27; and root as &#x27;/child/&#x27;</span><br><span class="line">url: https://fzy-line.github.io/</span><br><span class="line">root: /</span><br><span class="line">#博客链接格式</span><br><span class="line">permalink: :year/:month/:day/:title/ </span><br><span class="line">permalink_defaults:</span><br><span class="line"></span><br><span class="line"># Directory  #目录设置，一般不修改</span><br><span class="line">source_dir: source  #资源文件夹，放在里面的文件会上传到github中</span><br><span class="line">public_dir: public  #公共文件夹，存放生成的静态文件</span><br><span class="line">tag_dir: tags  #标签文件夹，默认是tags。实际存放在source/tags中。</span><br><span class="line">archive_dir: archives  #档案文件夹，默认是archives。</span><br><span class="line">category_dir: categories  #分类文件夹，默认是categories。实际存放在source/categories中。</span><br><span class="line">code_dir: downloads/code  #代码文件夹，默认是downloads/code</span><br><span class="line">i18n_dir: :lang  #国际化文件夹，默认跟language相同</span><br><span class="line">skip_render:  #跳过指定文件的渲染，您可使用 glob 来配置路径。</span><br><span class="line"></span><br><span class="line"># Writing  这是文章布局、写作格式的定义，一般不修改</span><br><span class="line">new_post_name: :title.md # File name of new posts</span><br><span class="line">default_layout: post</span><br><span class="line">titlecase: false # Transform title into titlecase</span><br><span class="line">external_link: true # Open external links in new tab</span><br><span class="line">filename_case: 0</span><br><span class="line">render_drafts: false</span><br><span class="line">post_asset_folder: false</span><br><span class="line">relative_link: false</span><br><span class="line">future: true</span><br><span class="line">highlight:</span><br><span class="line">  enable: true</span><br><span class="line">  line_number: true</span><br><span class="line">  auto_detect: false</span><br><span class="line">  tab_replace:</span><br><span class="line"></span><br><span class="line"># Category &amp; Tag  #分类和标签，一般不修改</span><br><span class="line">default_category: uncategorized</span><br><span class="line">category_map:</span><br><span class="line">tag_map:</span><br><span class="line"></span><br><span class="line"># Date / Time format  #日期、时间格式，一般不修改</span><br><span class="line">## Hexo uses Moment.js to parse and display date</span><br><span class="line">## You can customize the date format as defined in</span><br><span class="line">## http://momentjs.com/docs/#/displaying/format/</span><br><span class="line">date_format: YYYY-MM-DD </span><br><span class="line">time_format: HH:mm:ss</span><br><span class="line"></span><br><span class="line"># Pagination  #可根据自己需要修改</span><br><span class="line">## Set per_page to 0 to disable pagination</span><br><span class="line">per_page: 6  #分页，每页文章数量</span><br><span class="line">pagination_dir: page</span><br><span class="line"></span><br><span class="line"># Extensions  #扩展</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next  #博客主题</span><br><span class="line">  </span><br><span class="line"># Deployment 这里配置站点部署到Github，上一节中已经讲过</span><br><span class="line">## Docs: https://hexo.io/docs/deployment.html</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:你的Github用户名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h4 id="hexo使用主题"><a href="#hexo使用主题" class="headerlink" title="hexo使用主题"></a>hexo使用主题</h4><p>Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点目录的 themes 目录下， 然后修改下配置文件即可。</p>
+<p>hexo官方主题下载地址：<a target="_blank" rel="noopener" href="https://hexo.io/themes/%EF%BC%8C%E9%87%8C%E9%9D%A2%E6%9C%89%E5%A4%9A%E7%A7%8D%E5%A4%9A%E6%A0%B7%E7%9A%84%E4%B8%BB%E9%A2%98%E6%A8%A1%E6%9D%BF%E4%BE%9B%E5%A4%A7%E5%AE%B6%E9%80%89%E6%8B%A9%E3%80%82">https://hexo.io/themes/，里面有多种多样的主题模板供大家选择。</a></p>
+<p>这里使用的是ayer，下面的配置也是以这个主题为例。如果你使用的是其他的主题，那么请你自己根据说明文档进行配置。</p>
+<p><a target="_blank" rel="noopener" href="https://shen-yu.gitee.io/2019/ayer">ayer安装使用说</a></p>
+<h4 id="发布博客"><a href="#发布博客" class="headerlink" title="发布博客"></a>发布博客</h4><h5 id="新建博客文章"><a href="#新建博客文章" class="headerlink" title="新建博客文章"></a>新建博客文章</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post BlogName</span><br></pre></td></tr></table></figure>
+
+<p>实例：</p>
+<p>新建博客《BlogName》</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new post BlogName</span><br></pre></td></tr></table></figure>
+
+<p>到站点目录下的/source/_posts/目录下可以看到生成了名为：我的第一篇博客.md的文件，这是Markdown格式的文件，可以用typra编辑器打开。</p>
+<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<p>如果你没有使用过Markdown编辑器，那请你自己去学习一下Markdown语法。</p>
+<p>Markdown 语法说明(简体中文版)：<a target="_blank" rel="noopener" href="http://zengnb.fun/2017/03/21/%E8%AE%A4%E8%AF%86%E4%B8%8E%E5%85%A5%E9%97%A8MarkDown/">认识与入门MarkDown</a></p>
+<h5 id="编辑博客"><a href="#编辑博客" class="headerlink" title="编辑博客"></a>编辑博客</h5><p>Hexo默认新建的文章抬头已有title、date、tags等属性，可能缺乏categories和meta标签，想要指定目录就需要添加categories属性，而meta标签则是为了便于搜索引擎的收录。如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 我的第一篇博客</span><br><span class="line">date: 2016-12-02 23:44:20</span><br><span class="line">tags: #文章标签 可以省略</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>tags字段是文章的标签，可以指定标签也可以不指定，如果要指定多个标签需要这样做：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tags: </span><br><span class="line"> - Linux</span><br><span class="line"> - Http</span><br></pre></td></tr></table></figure>
+
+<p>我们可以添加上categories字段，对博客进行分类管理，然后点击主页左侧菜单的分类就可看到具体的分类。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">categories: Linux</span><br></pre></td></tr></table></figure>
+
+<h5 id="发布博客-1"><a href="#发布博客-1" class="headerlink" title="发布博客"></a>发布博客</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean  #清除缓存 网页正常情况下可以忽略此条命令</span><br><span class="line">$ hexo generate  #生成静态页面至public目录</span><br></pre></td></tr></table></figure>
+
+<p>写好之后可以现在本地预览，确定无误之后再部署到Github上。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server  #开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span><br><span class="line">$ hexo deploy  #将.deploy目录部署到GitHub</span><br></pre></td></tr></table></figure>
+
+<p>需要说明的是：</p>
+<p>我们博客文章的编写都是Markdown文件，但是发布到github上的其实是html文件，将Markdown转换成html这个工作我们只要输入hexo generate命令即可，hexo会帮我们完成转换。</p>
+<h5 id="hexo命令简写形式"><a href="#hexo命令简写形式" class="headerlink" title="hexo命令简写形式"></a>hexo命令简写形式</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
+
  
       <!-- reward -->
       
@@ -298,7 +339,7 @@
       <li>
         Copyrights &copy;
         2017-2021
-        <i class="ri-heart-fill heart_icon"></i> John Doe
+        <i class="ri-heart-fill heart_icon"></i> zeng
       </li>
     </ul>
     <ul>
@@ -350,7 +391,7 @@
 <nav class="navbar">
   
   <div class="logo">
-    <a href="/"><img src="/images/ayer-side.svg" alt="Hexo"></a>
+    <a href="/"><img src="/images/ayer-side.svg" alt="Zeng"></a>
   </div>
   
   <ul class="nav nav-main">
@@ -369,14 +410,6 @@
     
     <li class="nav-item">
       <a class="nav-item-link" href="/tags">标签</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" href="/tags/%E6%97%85%E8%A1%8C/">旅行</a>
-    </li>
-    
-    <li class="nav-item">
-      <a class="nav-item-link" target="_blank" rel="noopener" href="http://shenyu-vip.lofter.com">摄影</a>
     </li>
     
     <li class="nav-item">
